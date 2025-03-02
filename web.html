@@ -4,38 +4,7 @@
         <meta charset="utf-8">
         <title>HTML: Espacio</title>
         <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&display=swap" rel="stylesheet">
-        <style>
-
-            body {
-                background-image: url('img/img3.jpg'); /* Establece la imagen de fondo */
-                background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-                background-position: center; /* Centra la imagen en el fondo */
-                background-repeat: no-repeat; /* Evita que la imagen se repita */
-                image-rendering: -webkit-optimize-contrast; /* Mejora la calidad de la imagen en navegadores WebKit */
-                image-rendering: crisp-edges; /* Mejora la calidad de la imagen en otros navegadores */
-            }
-            .press-start {
-                font-family: 'Press Start 2P', cursive;
-                color: #ffffff;
-                font-size: larger;
-            }
-            .audiowide {
-                font-family: 'Audiowide', cursive;
-                font-size: 20px;
-                color: #ffe1e1;
-            }
-
-            #imagen{
-                width: 300px;
-                height: 300px;
-                position: absolute;
-                top: 40px;
-                left: 700px;
-                margin: 20px;
-                padding: auto;
-                border: solid 3px #ffffff;
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
 
@@ -43,29 +12,38 @@
     
     <img id="imagen"src="img/img1.webp" alt="Imagen del espacio con galaxias y estrellas" width="200"> 
     
-    <h3 class="press-start">¿Por qué el espacio es fascinante?</h3>
+    <div class="contenido-listas">
+        <h3 class="press-start">¿Por qué el espacio es fascinante?</h3>
+        <ul class="audiowide">
+            <li>Es infinito y misterioso.</li>
+            <li>Contiene miles de millones de galaxias.</li>
+            <li>Nos ayuda a entender nuestro lugar en el universo.</li>
+        </ul>
+    </div>   
+    <div class="contenido-listas">
+        <h3 class="press-start">Top 3 descubrimientos espaciales</h3>
+        <ol class="audiowide">
+            <li>La llegada del hombre a la Luna</li>
+            <li>La teoría del Big Bang</li>
+            <li>Los agujeros negros</li>
+        </ol>
+    </div>
     
-    <ul class="audiowide">
-        <li>Es infinito y misterioso.</li>
-        <li>Contiene miles de millones de galaxias.</li>
-        <li>Nos ayuda a entender nuestro lugar en el universo.</li>
-    </ul>
-    
-    <h3 class="press-start">Top 3 descubrimientos espaciales</h3>
-    
-    <ol class="audiowide">
-        <li>La llegada del hombre a la Luna</li>
-        <li>La teoría del Big Bang</li>
-        <li>Los agujeros negros</li>
-    </ol>
-    
+    <div class="cuadros">
     <h2 class="press-start">Información básica</h2>
     
-    <p class="audiowide">El espacio es un vasto vacío que contiene planetas, estrellas, galaxias y otros cuerpos celestes. La Tierra es solo un pequeño punto en un universo lleno de misterios. <strong>El ser humano ha explorado solo una pequeña fracción del universo, pero cada descubrimiento nos acerca más a entenderlo.</strong></p>
+        <p class="audiowide">El espacio es un vasto vacío que contiene planetas, estrellas, galaxias y otros cuerpos celestes. La Tierra es solo un pequeño punto en un universo lleno de misterios. <strong>El ser humano ha explorado solo una pequeña fracción del universo, pero cada descubrimiento nos acerca más a entenderlo.</strong></p>
+
+    </div>
     
-    <h2 class="press-start">Frase inspiradora</h2>
+    <div class="cuadros">
+
+        <h2 class="press-start">Frase inspiradora</h2>
     
-    <p class="audiowide">"Mira hacia las estrellas y no hacia abajo a tus pies. Intenta entender lo que ves y pregúntate qué hace que el universo exista. Sé curioso." - Stephen Hawking</p>
-    
+        <p class="audiowide">"Mira hacia las estrellas y no hacia abajo a tus pies. Intenta entender lo que ves y pregúntate qué hace que el universo exista. Sé curioso." - Stephen Hawking</p>
+        
+
+    </div>
+   
     </body>
 </html>
